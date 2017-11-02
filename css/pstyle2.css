@@ -1,0 +1,642 @@
+/****Icon made by Freepik from www.flaticon.com ****/
+
+/***** PORTFOLIO ****/
+
+/**** START GLOBAL STYLE ****/
+
+
+ul {
+	list-style-type: none
+}
+* {
+	font-family: 'Lovers Quarrel', cursive;
+	font-family: 'Josefin Slab', serif;
+	font-family: 'Tangerine', serif;
+	transition: all .2s linear
+}
+.textshadow {
+    text-shadow: 0px 0px 2px rgb(73, 228, 228), 0px 0px 32px #7BCACE
+}
+.clear-fix {
+	clear: both
+}
+abbr {
+	cursor: pointer;
+}
+
+body {
+	background-image: url(../imags/wellpaper5.jpg);
+    background-size: cover;
+	overflow: hidden
+
+}
+/**** END GLOBAL STYLE ****/
+
+/**** START HEADER ****/
+
+header,
+.gallery,
+.skill,
+.contact{
+    background:url(../imags/me55.jpg) fixed;
+    background-size: cover;
+    opacity: 0.9;
+    height: 100vh;
+}
+
+.boxshadow {
+	margin-top: 20px;
+	text-align: center;
+	background: transparent;
+	height: 85vh;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    -webkit-transform: translateY(0);
+    -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.boxshadow:hover{
+	/*-webkit-transform: scale(1, 1.05);
+    transform: scale(1, 1.05);*/
+}
+
+.boxshadow::after {
+	 z-index: 0;
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.boxshadow:hover:after {
+    opacity: 1;
+}
+header .introduction{
+	padding-top: 5%
+}
+
+header .introduction h3 {
+	font-size: 40px;
+	font-family:'Josefin Slab', serif;
+}
+
+header .introduction h3:first-child{
+	display: inline-block;
+    padding-right: 72px;
+}
+
+header .introduction h4 {
+    letter-spacing: 1px;
+    display: inline-block;
+	/*letter-spacing: 1px;
+    text-shadow: 0px 1px 0px grey;*/
+	font-size: 40px;
+    padding: 0px;
+}
+
+header .introduction .logo-name{
+    margin: 0;
+    letter-spacing: -3px;
+	font-size: 80px;
+	-webkit-transform: translate(0, -15px) rotate(-10deg);
+    -moz-transform : translate(0, -15px) rotate(-10deg);
+	-ms-transform : translate(0, -15px) rotate(-10deg);
+    -o-transform : translate(0, -15px) rotate(-10deg);
+	transform : translate(0, -15px) rotate(-10deg);
+}
+
+header .line{
+	display: inline-block;
+	height: 1px;
+    width: 40%;
+    background: #dcdede;
+    position: relative;
+}
+
+.line .fa-gg{
+	position: absolute;
+    left: 46%;
+    top: -7px;
+    color: #a9eae0;
+}
+
+header .introduction .endfa-gg{
+	color: #cfd8d5
+}
+header nav{
+	position: fixed;
+	width: 80%;
+}
+
+header nav ul {
+	text-align: center
+}
+
+header nav ul li{
+	display: inline-block;
+  padding: 10px 25px;
+	font-size: 35px
+}
+
+header nav ul li a img {
+	transition: all .5s ease-in-out;
+	width: 46px;
+  -moz-box-shadow:inset 0 0 10px #315b7f;
+  -webkit-box-shadow:inset 0 0 10px #315b7f;
+  box-shadow: inset 0 0 10px #315b7f;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+header nav ul li a img:hover,
+header nav ul li a img.active {
+	background: rgb(185, 233, 226);
+    box-shadow: 8px 1px 9px -3px rgb(66, 99, 137);
+}
+/**** END HEADER ****/
+
+/**** Start Gallery ****/
+.gallery,
+.skill,
+.contact{
+	opacity: 1
+}
+
+.gallery .mywork{
+	z-index: 99999;
+	position: relative;
+    transform: translate(0%,77%);
+	display: inline-block
+}
+
+.gallery .box1 {
+	display: inline-block;
+    float: left;
+    width: 15vh;
+    height: 15vh;
+    margin-left:39px;
+	transform:rotate(45deg);
+	position: relative;
+	overflow: hidden;
+	background-image: url(../imags/work2.png);
+	background-size: cover
+}
+
+.gallery .box1 .inner-box{
+  background: gray;
+  width: 15vh;
+  height: 15vh;
+	padding-right: 9px;
+}
+
+.gallery .box1 .inner-box a {
+	color: #a4e5f7;
+  font-family: 'Josefin Slab', serif;
+  transform: rotate(-45deg);
+  display: block;
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+	text-decoration: none
+}
+
+.gallery .row-tow .box2 i{
+	color: #a4e5f7;
+  transform: rotate(-45deg);
+  display: block;
+  position: relative;
+}
+
+.row-tow .box2 i{
+	font:normal normal normal 14px/1 FontAwesome;
+	top: 38px
+}
+
+.gallery .box1:hover .inner-box {
+	background: rgba(80, 78, 78, 0.62);
+}
+
+.gallery .row-tow {
+	position: relative
+}
+
+.gallery .box2{
+	background: gray;
+    width: 15vh;
+    height: 15vh;
+    transform: rotate(45deg);
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.gallery .row-tow .box2:first-child{
+	left: 32px;
+    top: 40px;
+	background: transparent
+}
+.gallery .row-tow .leftbox {
+	top: 108px;
+    left: 104px;
+}
+
+.gallery .row-tow .rigthbox {
+	left: 242px;
+    top: 109px;
+}
+
+.gallery .row-tow .box2:last-child{
+	left: 173px;
+    top: 39px;
+}
+
+
+.gallery .coming-box h2 {
+    transform: rotate(-91deg);
+    width: 205%;
+    top: -31px;
+    left: -31px;
+	position: relative;
+	font-family: 'Josefin Slab', serif;
+	font-size: 23px;
+    font-weight: bold;
+    color: gray
+}
+/**** End Gallery ****/
+
+/**** Start Skill ***/
+.skillprgress {
+	margin: 0 auto;
+	transform:translate(90%,50%);
+	position: absolute;
+	height: 50%;
+}
+.skill .progressbar:not(:first-child) {
+	margin: 50px 0;
+}
+
+.skill .progressbar {
+    width: 350px;
+    border: 1px solid #98ddfa;
+    border-radius: 20px;
+	position: relative;
+}
+
+.skill .progressbar h3 {
+	position: absolute;
+	font-weight: bold;
+	font-size: 20px;
+	left: 0;
+	top: -48px;
+	color: gray;
+	font-family: monospace;
+	letter-spacing: 2px;
+
+}
+
+.skill .progressbar .progres {
+	background: #426389;
+	border-radius: 20px;
+	height: 10px;
+	font-size: 28px;
+	color: rgba(100, 104, 105, 0.84);
+	font-weight: bold;
+	text-align: right;
+}
+
+.skill .progressbar span {
+	position: absolute;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: gray;
+	font-size: 18px;
+	top: -29px;
+}
+
+.skill .butmore-skill {
+	position: absolute;
+	z-index: 999999999;
+	top: 40%;
+  	right: 25%;
+}
+.skill .butmore-skill .bolit{
+	position: relative;
+	border: 1px solid #426389;
+	height: 10px;
+	width: 10px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.skill .butmore-skill .bolit:last-child{
+	top:25px
+}
+
+.skill .butmore-skill .bolit.active{
+	background:  #426389;
+}
+
+.skill .more-skill{
+	margin: 0 auto;
+	transform: translate(90%,50%);
+	position: absolute;
+	background: rgba(81, 188, 238, 0.29);
+	border-radius: 20px;
+	height: 57%;
+	display: none;
+}
+
+.skill .more-skill .holder-moreskill {
+	margin-top: 10%
+}
+
+.skill .more-skill .holder-moreskill h2 {
+ color: #426389;
+ letter-spacing: 2px;
+ font-weight: bold;
+ line-height: 40px
+}
+
+/** End Section Skill **/
+
+/** Start Section Contact **/
+.contact .mywork{
+	z-index: 99999;
+	position: relative;
+  transform: translate(60%,210%);
+	width: 60%;
+}
+
+.contact .u-canfind{
+	transform: translate(-44px,100px);
+	display: inline-block;
+}
+
+.contact .u-canfind h2 {
+	 text-shadow: 0px 0px 2px rgb(66, 99, 137), 0px 0px 32px #7fe5ea;
+	 letter-spacing: 2px
+}
+
+.contact .u-canfind .line{
+	width: 100%;
+  height: 1px;
+  background: #eaebec;
+}
+
+.contact .u-canfind .line .fa-gg {
+	position: absolute;
+	left: 46%;
+	top: 56px;
+	color: #a9eae0;
+	}
+
+.contact .box1 {
+	display: inline-block;
+	float: left;
+	width: 10vh;
+	height: 10vh;
+	margin-left: 27px;
+	transform:rotate(45deg);
+	position: relative;
+	overflow: hidden;
+}
+
+.contact .inner-box{
+	text-align: center;
+    background: #426389;
+    width: 10vh;
+    height: 10vh;
+	display: flex;
+    flex-direction: column;
+    padding-right: 0;
+	border: 1px solid transparent
+}
+.contact .inner-box a i,
+.contact .row-tow .box2 a i {
+	color: #fff;
+    font-size: 15px;
+	top: 23px;
+	transform: rotate(-45deg);
+    position: relative;
+}
+
+.contact  .row-tow {
+	position: relative
+}
+
+.contact .box2{
+	background: #426389;
+	width: 10vh;
+	height: 10vh;
+	transform: rotate(45deg);
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 5%;
+}
+
+.contact .row-tow .box2:first-child{
+	left: 75px;
+	top: 6px;
+}
+
+.contact .row-tow .box2:last-child{
+	left: 165px;
+ 	top: 7px;
+}
+.contact .box1:hover .inner-box,
+.contact .box1:hover .inner-box a i,
+.contact .row-tow .box2:hover .inner-box,
+.contact .row-tow .box2:hover .inner-box  a i
+{
+    background: #bef8ec;
+	color: #426389;
+	border-color: #426389
+}
+/** End Section Contact **/
+
+
+/* ------------------------- Start Media Query -------------------------------------- */
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.boxshadow {
+		background: rgba(255, 255, 255, 0.44);
+	}
+	
+	header .introduction {
+		padding-top: 13%;
+	}
+	
+	header .introduction .logo-name{
+		font-size: 69px
+	}
+	
+	header .introduction h3 {
+		font-size: 28px;
+	}
+	
+	header .introduction h4 {
+	    font-size: 27px;
+	}
+	
+	header nav {
+		width: 100%;
+		overflow: hidden
+	}
+	
+	header nav ul {
+		padding: 0
+	}
+	header nav ul li{
+		padding: 10px 5px;
+	}
+	header nav ul li a img {
+		background: rgba(0, 255, 255, 0.68)
+	}
+	
+	/* section work */
+	.gallery .box1,
+	.gallery .box2{
+		width: 11vh;
+		height: 11vh
+	}
+	
+	.gallery .mywork{
+		transform: translate(0,100px);
+		width: 100%
+	}
+	
+	.gallery .box1 {
+		margin-left: 31px
+	}
+	
+	.gallery .box1 .inner-box a {
+		font-size: 15px;
+		top: 9px;
+    	left: -11px;	
+	}
+	
+	.gallery .row-tow .leftbox {
+        top: 88px;
+    	left: 80px;
+	}
+	
+	.gallery .row-tow .rigthbox {
+        left: 202px;
+    	top: 87px;
+	}
+	
+	.gallery .row-tow .box2:last-child {
+		left: 140px;
+		top: 30px;
+	}
+	
+	.gallery .row-tow .box2 i {
+		line-height: 0
+	}
+	
+	/* section skill */
+	.skill .skillprgress {
+		transform: translate(40px,95px);
+	}
+	
+	.skill .progressbar {
+		width: 100%
+	}
+	
+	.skill .butmore-skill {
+		right: 7%
+	}
+	
+	.skill .more-skill {
+		transform: translate(45px,109px)
+	}
+	.skill .progressbar h3 {
+		font-weight: normal;
+		font-size: 17px;
+		letter-spacing:0
+	}
+	.skill .progressbar span{
+		font-weight:normal
+	}
+	.skillprgress .progressbar:nth-child(3) span {
+		right: 27px !important
+	}
+	
+	/* section contact */
+	.contact .u-canfind{
+		transform: translate(2%,150%);
+	}
+	
+	.contact .mywork {
+		transform: translate(14px,134px);
+		width: 94%;
+		display: inline-block
+	}
+	.skill .more-skill .holder-moreskill h2{
+		line-height: 28px
+	}
+	
+}
+
+@media (min-width: 516px) and (max-width: 991px){
+	
+	.skill .skillprgress,
+	.skill .more-skill{
+		transform: translate(20%,30%)
+	}
+	.skill .butmore-skill {
+		right: 19%
+	}
+	.contact .u-canfind {
+		transform: translate(23px,100px);
+	}
+}
+
+@media (min-width : 1199px){
+	.contact .u-canfind {
+		transform: translate(-10px,100px);
+	}
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
